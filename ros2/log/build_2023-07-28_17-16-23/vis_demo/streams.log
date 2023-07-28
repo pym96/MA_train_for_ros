@@ -1,0 +1,72 @@
+[0.014s] Invoking command in '/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo
+[0.064s] -- The C compiler identification is GNU 11.3.0
+[0.111s] -- The CXX compiler identification is GNU 11.3.0
+[0.118s] -- Detecting C compiler ABI info
+[0.189s] -- Detecting C compiler ABI info - done
+[0.206s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.207s] -- Detecting C compile features
+[0.207s] -- Detecting C compile features - done
+[0.213s] -- Detecting CXX compiler ABI info
+[0.292s] -- Detecting CXX compiler ABI info - done
+[0.310s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.311s] -- Detecting CXX compile features
+[0.312s] -- Detecting CXX compile features - done
+[0.316s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.465s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[0.519s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.566s] -- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)
+[0.598s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.601s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.608s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.619s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.634s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.689s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.691s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.803s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.827s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.870s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.877s] -- Looking for pthread.h
+[0.949s] -- Looking for pthread.h - found
+[0.949s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.017s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.018s] -- Found Threads: TRUE  
+[1.159s] -- Found OpenCV: /usr (found version "4.5.4") 
+[1.160s] -- Found visualization_msgs: 4.2.3 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.381s] -- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.453s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.453s] -- Configured cppcheck include dirs: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo/include
+[1.453s] -- Configured cppcheck exclude dirs and/or files: 
+[1.453s] -- Added test 'lint_cmake' to check CMake code style
+[1.453s] -- Added test 'uncrustify' to check C / C++ code style
+[1.453s] -- Configured uncrustify additional arguments: 
+[1.454s] -- Added test 'xmllint' to check XML markup files
+[1.455s] -- Configuring done
+[1.464s] -- Generating done
+[1.465s] -- Build files have been written to: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo
+[1.477s] Invoked command in '/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo
+[1.481s] Invoking command in '/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo -- -j16 -l16
+[1.526s] [ 50%] [32mBuilding CXX object CMakeFiles/demo.dir/src/vis_demo.cpp.o[0m
+[4.765s] [100%] [32m[1mLinking CXX executable demo[0m
+[4.943s] [100%] Built target demo
+[4.952s] Invoked command in '/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo -- -j16 -l16
+[4.977s] Invoking command in '/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo
+[4.983s] -- Install configuration: ""
+[4.983s] -- Execute custom install script
+[4.983s] -- Symlinking: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo/lib/vis_demo/demo
+[4.991s] -- Symlinking: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo/share/ament_index/resource_index/package_run_dependencies/vis_demo
+[4.998s] -- Symlinking: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo/share/ament_index/resource_index/parent_prefix_path/vis_demo
+[5.006s] -- Symlinking: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo/share/vis_demo/environment/ament_prefix_path.sh
+[5.013s] -- Symlinking: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo/share/vis_demo/environment/ament_prefix_path.dsv
+[5.020s] -- Symlinking: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo/share/vis_demo/environment/path.sh
+[5.027s] -- Symlinking: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo/share/vis_demo/environment/path.dsv
+[5.035s] -- Symlinking: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo/share/vis_demo/local_setup.bash
+[5.042s] -- Symlinking: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo/share/vis_demo/local_setup.sh
+[5.051s] -- Symlinking: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo/share/vis_demo/local_setup.zsh
+[5.059s] -- Symlinking: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo/share/vis_demo/local_setup.dsv
+[5.067s] -- Symlinking: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo/share/vis_demo/package.dsv
+[5.073s] -- Symlinking: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo/share/ament_index/resource_index/packages/vis_demo
+[5.080s] -- Symlinking: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo/share/vis_demo/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.086s] -- Symlinking: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo/share/vis_demo/cmake/vis_demoConfig.cmake
+[5.093s] -- Symlinking: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo/share/vis_demo/cmake/vis_demoConfig-version.cmake
+[5.099s] -- Symlinking: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo/share/vis_demo/package.xml
+[5.109s] Invoked command in '/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo

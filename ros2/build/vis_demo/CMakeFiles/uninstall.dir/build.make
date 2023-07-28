@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dan/train/train/MA_training/visulization_demo/src/vis_demo
+CMAKE_SOURCE_DIR = /home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dan/train/train/MA_training/visulization_demo/build/vis_demo
+CMAKE_BINARY_DIR = /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/dan/train/train/MA_training/visulization_demo/build/vis_demo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dan/train/train/MA_training/visulization_demo/src/vis_demo /home/dan/train/train/MA_training/visulization_demo/src/vis_demo /home/dan/train/train/MA_training/visulization_demo/build/vis_demo /home/dan/train/train/MA_training/visulization_demo/build/vis_demo /home/dan/train/train/MA_training/visulization_demo/build/vis_demo/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo /home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dan/train/train/MA_training/visulization_demo/src/vis_demo
+CMAKE_SOURCE_DIR = /home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dan/train/train/MA_training/visulization_demo/build/vis_demo
+CMAKE_BINARY_DIR = /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo
 
 # Utility rule file for vis_demo_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/vis_demo_uninstall.dir/compiler_depend.make
 include CMakeFiles/vis_demo_uninstall.dir/progress.make
 
 CMakeFiles/vis_demo_uninstall:
-	/usr/bin/cmake -P /home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 vis_demo_uninstall: CMakeFiles/vis_demo_uninstall
 vis_demo_uninstall: CMakeFiles/vis_demo_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/vis_demo_uninstall.dir/clean:
 .PHONY : CMakeFiles/vis_demo_uninstall.dir/clean
 
 CMakeFiles/vis_demo_uninstall.dir/depend:
-	cd /home/dan/train/train/MA_training/visulization_demo/build/vis_demo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dan/train/train/MA_training/visulization_demo/src/vis_demo /home/dan/train/train/MA_training/visulization_demo/src/vis_demo /home/dan/train/train/MA_training/visulization_demo/build/vis_demo /home/dan/train/train/MA_training/visulization_demo/build/vis_demo /home/dan/train/train/MA_training/visulization_demo/build/vis_demo/CMakeFiles/vis_demo_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo /home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/CMakeFiles/vis_demo_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/vis_demo_uninstall.dir/depend
 

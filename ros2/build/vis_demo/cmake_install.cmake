@@ -1,8 +1,8 @@
-# Install script for directory: /home/dan/train/train/MA_training/visulization_demo/src/vis_demo
+# Install script for directory: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dan/train/train/MA_training/visulization_demo/install/vis_demo")
+  set(CMAKE_INSTALL_PREFIX "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

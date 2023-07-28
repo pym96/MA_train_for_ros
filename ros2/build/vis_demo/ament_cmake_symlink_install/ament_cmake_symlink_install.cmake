@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/dan/train/train/MA_training/visulization_demo/install/vis_demo/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/dan/train/train/MA_training/visulization_demo/install/vis_demo/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/dan/train/train/MA_training/visulization_demo/install/vis_demo/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/dan/train/train/MA_training/visulization_demo/install/vis_demo/${destination}")
+      set(destination "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/vis_demo/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,49 +311,49 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install("TARGETS" "demo" "DESTINATION" "lib/vis_demo")
-include("/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vis_demo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/visulization_demo/src/vis_demo" FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vis_demo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vis_demo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo" FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vis_demo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vis_demo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/visulization_demo/src/vis_demo" FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vis_demo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vis_demo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo" FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vis_demo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/vis_demo/environment")
-ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/visulization_demo/src/vis_demo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/vis_demo/environment")
+ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/vis_demo/environment")
 
-# install(FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vis_demo/environment")
-ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/visulization_demo/src/vis_demo" FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vis_demo/environment")
+# install(FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vis_demo/environment")
+ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo" FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vis_demo/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/vis_demo/environment")
-ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/visulization_demo/src/vis_demo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/vis_demo/environment")
+ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/vis_demo/environment")
 
-# install(FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vis_demo/environment")
-ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/visulization_demo/src/vis_demo" FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vis_demo/environment")
+# install(FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vis_demo/environment")
+ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo" FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vis_demo/environment")
 
-# install(FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vis_demo")
-ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/visulization_demo/src/vis_demo" FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vis_demo")
+# install(FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vis_demo")
+ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo" FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vis_demo")
 
-# install(FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vis_demo")
-ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/visulization_demo/src/vis_demo" FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vis_demo")
+# install(FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vis_demo")
+ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo" FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vis_demo")
 
-# install(FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vis_demo")
-ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/visulization_demo/src/vis_demo" FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vis_demo")
+# install(FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vis_demo")
+ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo" FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vis_demo")
 
-# install(FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vis_demo")
-ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/visulization_demo/src/vis_demo" FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vis_demo")
+# install(FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vis_demo")
+ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo" FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vis_demo")
 
-# install(FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vis_demo")
-ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/visulization_demo/src/vis_demo" FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vis_demo")
+# install(FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vis_demo")
+ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo" FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vis_demo")
 
-# install(FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_index/share/ament_index/resource_index/packages/vis_demo" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/visulization_demo/src/vis_demo" FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_index/share/ament_index/resource_index/packages/vis_demo" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_index/share/ament_index/resource_index/packages/vis_demo" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo" FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_index/share/ament_index/resource_index/packages/vis_demo" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/vis_demo/cmake")
-ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/visulization_demo/src/vis_demo" FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/vis_demo/cmake")
+# install(FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/vis_demo/cmake")
+ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo" FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/vis_demo/cmake")
 
-# install(FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_core/vis_demoConfig.cmake" "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_core/vis_demoConfig-version.cmake" "DESTINATION" "share/vis_demo/cmake")
-ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/visulization_demo/src/vis_demo" FILES "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_core/vis_demoConfig.cmake" "/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_core/vis_demoConfig-version.cmake" "DESTINATION" "share/vis_demo/cmake")
+# install(FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_core/vis_demoConfig.cmake" "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_core/vis_demoConfig-version.cmake" "DESTINATION" "share/vis_demo/cmake")
+ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo" FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_core/vis_demoConfig.cmake" "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_core/vis_demoConfig-version.cmake" "DESTINATION" "share/vis_demo/cmake")
 
-# install(FILES "/home/dan/train/train/MA_training/visulization_demo/src/vis_demo/package.xml" "DESTINATION" "share/vis_demo")
-ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/visulization_demo/src/vis_demo" FILES "/home/dan/train/train/MA_training/visulization_demo/src/vis_demo/package.xml" "DESTINATION" "share/vis_demo")
+# install(FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo/package.xml" "DESTINATION" "share/vis_demo")
+ament_cmake_symlink_install_files("/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo" FILES "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/vis_demo/package.xml" "DESTINATION" "share/vis_demo")

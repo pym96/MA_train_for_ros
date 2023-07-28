@@ -1,1 +1,1 @@
-/home/dan/train/train/MA_training/visulization_demo/build/vis_demo/ament_cmake_environment_hooks/local_setup.zsh
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_environment_hooks/local_setup.zsh
