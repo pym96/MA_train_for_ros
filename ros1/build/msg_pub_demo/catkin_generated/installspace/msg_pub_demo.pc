@@ -1,0 +1,8 @@
+prefix=/home/ma/learn/ros1_practise/ros1_control_arm/install
+
+Name: msg_pub_demo
+Description: Description of msg_pub_demo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs message_runtime

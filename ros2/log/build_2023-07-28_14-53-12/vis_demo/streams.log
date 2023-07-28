@@ -1,0 +1,56 @@
+[0.016s] Invoking command in '/home/dan/train/train/MA_training/visulization_demo/build/vis_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dan/train/train/MA_training/visulization_demo/build/vis_demo -- -j16 -l16
+[0.054s] [35m[1mConsolidate compiler generated dependencies of target demo[0m
+[0.070s] [ 50%] [32mBuilding CXX object CMakeFiles/demo.dir/src/vis_demo.cpp.o[0m
+[1.975s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.975s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.975s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.975s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.975s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.975s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.976s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.976s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.976s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.976s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.976s]                  from [01m[K/home/dan/train/train/MA_training/visulization_demo/src/vis_demo/src/vis_demo.cpp:1[m[K:
+[1.976s] [01m[K/home/dan/train/train/MA_training/visulization_demo/src/vis_demo/src/vis_demo.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.977s] [01m[K/home/dan/train/train/MA_training/visulization_demo/src/vis_demo/src/vis_demo.cpp:10:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[1.977s]    10 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(),"Detector node started!");
+[1.977s]       |                 [01;31m[K^~~~[m[K
+[1.977s] [01m[K/home/dan/train/train/MA_training/visulization_demo/src/vis_demo/src/vis_demo.cpp:10:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[1.977s] [01m[K/home/dan/train/train/MA_training/visulization_demo/src/vis_demo/src/vis_demo.cpp:10:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.977s]    10 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(),"Detector node started!");
+[1.977s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.977s] [01m[K/home/dan/train/train/MA_training/visulization_demo/src/vis_demo/src/vis_demo.cpp:10:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.977s]    10 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(),"Detector node started!");
+[1.977s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.977s] [01m[K/home/dan/train/train/MA_training/visulization_demo/src/vis_demo/src/vis_demo.cpp:10:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.977s]    10 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(),"Detector node started!");
+[1.977s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.977s] [01m[K/home/dan/train/train/MA_training/visulization_demo/src/vis_demo/src/vis_demo.cpp:10:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.977s]    10 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(),"Detector node started!");
+[1.977s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.978s] [01m[K/home/dan/train/train/MA_training/visulization_demo/src/vis_demo/src/vis_demo.cpp:10:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.978s]    10 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(),"Detector node started!");
+[1.978s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.978s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.978s]                  from [01m[K/home/dan/train/train/MA_training/visulization_demo/src/vis_demo/src/vis_demo.cpp:1[m[K:
+[1.978s] [01m[K/home/dan/train/train/MA_training/visulization_demo/src/vis_demo/src/vis_demo.cpp:10:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[1.979s]    10 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(),"Detector node started!");
+[1.979s]       |                 [01;31m[K^~~~[m[K
+[1.979s] [01m[K/home/dan/train/train/MA_training/visulization_demo/src/vis_demo/src/vis_demo.cpp:10:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[1.979s]    10 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(),"Detector node started!");
+[1.979s]       |                 [01;31m[K^~~~[m[K
+[2.342s] gmake[2]: *** [CMakeFiles/demo.dir/build.make:76: CMakeFiles/demo.dir/src/vis_demo.cpp.o] Error 1
+[2.342s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/demo.dir/all] Error 2
+[2.342s] gmake: *** [Makefile:146: all] Error 2
+[2.345s] Invoked command in '/home/dan/train/train/MA_training/visulization_demo/build/vis_demo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dan/train/train/MA_training/visulization_demo/build/vis_demo -- -j16 -l16

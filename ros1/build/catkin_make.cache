@@ -1,0 +1,2 @@
+msg_pub_demo:node_demo:robot_description
+-DCATKIN_DEVEL_PREFIX=/home/ma/learn/ros1_practise/ros1_control_arm/devel -DCMAKE_INSTALL_PREFIX=/home/ma/learn/ros1_practise/ros1_control_arm/install -G Unix Makefiles

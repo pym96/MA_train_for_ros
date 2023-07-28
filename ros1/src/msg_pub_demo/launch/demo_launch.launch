@@ -1,0 +1,7 @@
+<launch>
+  <!-- Start the demo_message_publisher node -->
+  <node name="demo_message_publisher" pkg="msg_pub_demo" type="demo_message_publisher" output="screen" />
+
+  <!-- Start the demo_message_subscriber node -->
+  <node name="demo_message_subscriber" pkg="msg_pub_demo" type="demo_message_subscriber" output="screen" />
+</launch>
