@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/marker_array/marker_array_demo" "TARGETS" "marker_array_demo" "DESTINATION" "lib/marker_array")

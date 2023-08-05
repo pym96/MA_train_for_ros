@@ -1,0 +1,53 @@
+[0.023s] Invoking command in '/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/marker_array': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/marker_array -DCMAKE_INSTALL_PREFIX=/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/marker_array
+[0.052s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.130s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.193s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.205s] -- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)
+[0.251s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.254s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.261s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.274s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.291s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.364s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.366s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.515s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.744s] -- Found visualization_msgs: 4.2.3 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.084s] -- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.173s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.173s] -- Configured cppcheck include dirs: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/marker_array/include
+[1.173s] -- Configured cppcheck exclude dirs and/or files: 
+[1.174s] -- Added test 'lint_cmake' to check CMake code style
+[1.175s] -- Added test 'uncrustify' to check C / C++ code style
+[1.175s] -- Configured uncrustify additional arguments: 
+[1.175s] -- Added test 'xmllint' to check XML markup files
+[1.178s] -- Configuring done
+[1.193s] -- Generating done
+[1.195s] -- Build files have been written to: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/marker_array
+[1.209s] Invoked command in '/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/marker_array' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/marker_array -DCMAKE_INSTALL_PREFIX=/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/marker_array
+[1.211s] Invoking command in '/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/marker_array': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/marker_array -- -j16 -l16
+[1.259s] [35m[1mConsolidate compiler generated dependencies of target marker_array_demo[0m
+[1.290s] [ 50%] [32mBuilding CXX object CMakeFiles/marker_array_demo.dir/src/marker_array_demo.cpp.o[0m
+[5.592s] [100%] [32m[1mLinking CXX executable marker_array_demo[0m
+[5.816s] [100%] Built target marker_array_demo
+[5.828s] Invoked command in '/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/marker_array' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/marker_array -- -j16 -l16
+[5.858s] Invoking command in '/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/marker_array': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/marker_array
+[5.866s] -- Install configuration: ""
+[5.866s] -- Execute custom install script
+[5.867s] -- Up-to-date symlink: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/marker_array/lib/marker_array/marker_array_demo
+[5.867s] -- Up-to-date symlink: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/marker_array/share/ament_index/resource_index/package_run_dependencies/marker_array
+[5.868s] -- Up-to-date symlink: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/marker_array/share/ament_index/resource_index/parent_prefix_path/marker_array
+[5.868s] -- Up-to-date symlink: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/marker_array/share/marker_array/environment/ament_prefix_path.sh
+[5.868s] -- Up-to-date symlink: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/marker_array/share/marker_array/environment/ament_prefix_path.dsv
+[5.868s] -- Up-to-date symlink: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/marker_array/share/marker_array/environment/path.sh
+[5.869s] -- Up-to-date symlink: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/marker_array/share/marker_array/environment/path.dsv
+[5.869s] -- Up-to-date symlink: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/marker_array/share/marker_array/local_setup.bash
+[5.869s] -- Up-to-date symlink: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/marker_array/share/marker_array/local_setup.sh
+[5.869s] -- Up-to-date symlink: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/marker_array/share/marker_array/local_setup.zsh
+[5.869s] -- Up-to-date symlink: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/marker_array/share/marker_array/local_setup.dsv
+[5.870s] -- Symlinking: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/marker_array/share/marker_array/package.dsv
+[5.878s] -- Up-to-date symlink: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/marker_array/share/ament_index/resource_index/packages/marker_array
+[5.878s] -- Up-to-date symlink: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/marker_array/share/marker_array/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.878s] -- Up-to-date symlink: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/marker_array/share/marker_array/cmake/marker_arrayConfig.cmake
+[5.878s] -- Up-to-date symlink: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/marker_array/share/marker_array/cmake/marker_arrayConfig-version.cmake
+[5.878s] -- Up-to-date symlink: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/marker_array/share/marker_array/package.xml
+[5.882s] Invoked command in '/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/marker_array' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/marker_array

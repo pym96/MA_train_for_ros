@@ -1,0 +1,66 @@
+<?xml verison="1.0" ?>
+<robot name="robot_arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- <xacro:macro name="link_cylinder" params="name origin_xyz orgin_rpy radius length">
+        <link name="${name}">
+        <visual>
+            <origin rpy="${origin_xyz}" xyz="${orgin_rpy}">
+            <gemotry>
+                <cylinder radius="${radius}" length="${length}"/>
+            </gemotry>
+            </origin>
+        </visual>
+        </link>
+    </xacro> -->
+
+    <xacro:inclue finlename="${find urdf_demo}/urdf/link.xacro" />
+
+    <link name="base_link">
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0">
+            <gemotry>
+                <box size="3 3 1">
+            </gemotry>
+            </origin>
+        </visual>
+    </link>
+
+    <!-- Joint that connects different links -->
+    <joint name="base_link__link_01" type="revolute"> 
+        <axis xyz="0 0 1"/>
+        <limit effort="1000" lower="-3.14" upper="3.14" velocity="0.5" />
+        <origin rpy="0 0 0" xyz="0 0 0.5" />
+        <parent link="base_link"/>
+        <child link="link__01"/>
+    </joint>
+    
+    <xacro:link_cylinder name="link_01" origin_rpy="0 0 0" origin_xyz="0 0 0.2" radius="0.35" length="0.4"/>
+
+    <!-- <link name="link_01"> 
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0.2"/>
+            <gemotry>
+                <cylinder radius="0.35" length="0.4"/>
+            </gemotry>
+        </visual>  
+    </link> -->
+
+    <joint name="link_01__link_02" type="revolute">
+        <axis xyz="0 1 0"/>
+        <limit effort="1000" lower="-3.14" upper="3.14" velocity="0.5"/>
+        <origin rpy="0 0 0" xyz="0 0 0.5"/>
+        <parent link="link_01"/>
+        <child link="link_02"/>
+    </joint>
+
+    <xacro:link_cylinder name="link_02" origin_rpy="0 0 0" origin_xyz="0 0 0.4" radius="0.15" length="1.2"/>
+    <!-- <link name="link_02">
+        <visual>    
+            <origin rpy="0 0 0" xyz="0 0 0.4"/>
+            <gemotry>
+                <cylinder radius="0.15" length="1.2"/>
+            </gemotry>
+        <visual>
+    </link> -->
+
+</robot>

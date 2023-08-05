@@ -1,0 +1,15 @@
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_demo/share/ament_index/resource_index/package_run_dependencies/urdf_demo
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_demo/share/ament_index/resource_index/parent_prefix_path/urdf_demo
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_demo/share/urdf_demo/environment/ament_prefix_path.sh
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_demo/share/urdf_demo/environment/ament_prefix_path.dsv
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_demo/share/urdf_demo/environment/path.sh
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_demo/share/urdf_demo/environment/path.dsv
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_demo/share/urdf_demo/local_setup.bash
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_demo/share/urdf_demo/local_setup.sh
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_demo/share/urdf_demo/local_setup.zsh
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_demo/share/urdf_demo/local_setup.dsv
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_demo/share/urdf_demo/package.dsv
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_demo/share/ament_index/resource_index/packages/urdf_demo
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_demo/share/urdf_demo/cmake/urdf_demoConfig.cmake
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_demo/share/urdf_demo/cmake/urdf_demoConfig-version.cmake
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_demo/share/urdf_demo/package.xml

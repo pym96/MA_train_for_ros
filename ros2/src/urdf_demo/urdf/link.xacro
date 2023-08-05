@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:macro name="link_cylinder" params="name origin_xyz orgin_rpy radius length">
+        <link name="${name}">
+        <visual>
+            <origin rpy="${origin_xyz}" xyz="${orgin_rpy}">
+            <gemotry>
+                <cylinder radius="${radius}" length="${length}"/>
+            </gemotry>
+            </origin>
+        </visual>
+        </link>
+    </xacro>
+
+</robot>
