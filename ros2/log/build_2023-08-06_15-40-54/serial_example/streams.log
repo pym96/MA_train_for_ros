@@ -1,0 +1,11 @@
+[0.014s] Invoking command in '/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example -- -j16 -l16
+[0.078s] [35m[1mConsolidate compiler generated dependencies of target SERIAL_DEMO[0m
+[0.099s] [ 50%] [32mBuilding CXX object CMakeFiles/SERIAL_DEMO.dir/src/serial_example.cpp.o[0m
+[2.441s] [01m[K/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/serial_example/src/serial_example.cpp:[m[K In member function ‘[01m[Kvoid SerialPortNode::readCallback()[m[K’:
+[2.441s] [01m[K/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/serial_example/src/serial_example.cpp:60:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass drivers::serial_driver::SerialDriver[m[K’ has no member named ‘[01m[Kread[m[K’
+[2.441s]    60 |         if (serial_driver_->[01;31m[Kread[m[K(data))
+[2.441s]       |                             [01;31m[K^~~~[m[K
+[2.846s] gmake[2]: *** [CMakeFiles/SERIAL_DEMO.dir/build.make:76: CMakeFiles/SERIAL_DEMO.dir/src/serial_example.cpp.o] Error 1
+[2.847s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/SERIAL_DEMO.dir/all] Error 2
+[2.847s] gmake: *** [Makefile:146: all] Error 2
+[2.850s] Invoked command in '/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example -- -j16 -l16

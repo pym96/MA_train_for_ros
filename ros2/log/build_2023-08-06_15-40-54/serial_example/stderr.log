@@ -1,0 +1,7 @@
+[01m[K/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/serial_example/src/serial_example.cpp:[m[K In member function ‘[01m[Kvoid SerialPortNode::readCallback()[m[K’:
+[01m[K/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/serial_example/src/serial_example.cpp:60:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass drivers::serial_driver::SerialDriver[m[K’ has no member named ‘[01m[Kread[m[K’
+   60 |         if (serial_driver_->[01;31m[Kread[m[K(data))
+      |                             [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/SERIAL_DEMO.dir/build.make:76: CMakeFiles/SERIAL_DEMO.dir/src/serial_example.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/SERIAL_DEMO.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

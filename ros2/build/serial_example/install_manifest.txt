@@ -1,0 +1,17 @@
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/lib/serial_example/SERIAL_DEMO
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/ament_index/resource_index/package_run_dependencies/serial_example
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/ament_index/resource_index/parent_prefix_path/serial_example
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/environment/ament_prefix_path.sh
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/environment/ament_prefix_path.dsv
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/environment/path.sh
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/environment/path.dsv
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/local_setup.bash
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/local_setup.sh
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/local_setup.zsh
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/local_setup.dsv
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/package.dsv
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/ament_index/resource_index/packages/serial_example
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/cmake/ament_cmake_export_dependencies-extras.cmake
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/cmake/serial_exampleConfig.cmake
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/cmake/serial_exampleConfig-version.cmake
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/package.xml

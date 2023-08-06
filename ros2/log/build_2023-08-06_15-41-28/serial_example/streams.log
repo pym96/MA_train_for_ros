@@ -1,0 +1,27 @@
+[0.015s] Invoking command in '/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example -- -j16 -l16
+[0.058s] [35m[1mConsolidate compiler generated dependencies of target SERIAL_DEMO[0m
+[0.083s] [ 50%] [32mBuilding CXX object CMakeFiles/SERIAL_DEMO.dir/src/serial_example.cpp.o[0m
+[3.101s] [100%] [32m[1mLinking CXX executable SERIAL_DEMO[0m
+[3.287s] [100%] Built target SERIAL_DEMO
+[3.297s] Invoked command in '/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example -- -j16 -l16
+[3.323s] Invoking command in '/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example
+[3.330s] -- Install configuration: ""
+[3.331s] -- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/lib/serial_example/SERIAL_DEMO
+[3.331s] -- Set runtime path of "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/lib/serial_example/SERIAL_DEMO" to ""
+[3.332s] -- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/ament_index/resource_index/package_run_dependencies/serial_example
+[3.332s] -- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/ament_index/resource_index/parent_prefix_path/serial_example
+[3.333s] -- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/environment/ament_prefix_path.sh
+[3.333s] -- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/environment/ament_prefix_path.dsv
+[3.333s] -- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/environment/path.sh
+[3.333s] -- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/environment/path.dsv
+[3.333s] -- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/local_setup.bash
+[3.333s] -- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/local_setup.sh
+[3.333s] -- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/local_setup.zsh
+[3.334s] -- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/local_setup.dsv
+[3.334s] -- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/package.dsv
+[3.335s] -- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/ament_index/resource_index/packages/serial_example
+[3.335s] -- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.336s] -- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/cmake/serial_exampleConfig.cmake
+[3.336s] -- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/cmake/serial_exampleConfig-version.cmake
+[3.336s] -- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/package.xml
+[3.339s] Invoked command in '/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example

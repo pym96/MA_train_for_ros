@@ -1,0 +1,10 @@
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example/CMakeFiles/uninstall.dir
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example/CMakeFiles/serial_example_uninstall.dir
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example/CMakeFiles/SERIAL_DEMO.dir
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example/CMakeFiles/test.dir
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example/CMakeFiles/edit_cache.dir
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example/CMakeFiles/rebuild_cache.dir
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example/CMakeFiles/list_install_components.dir
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example/CMakeFiles/install.dir
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example/CMakeFiles/install/local.dir
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/serial_example/CMakeFiles/install/strip.dir
