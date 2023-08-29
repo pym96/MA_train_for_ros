@@ -11,8 +11,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/marker_array/src/marker_array_demo.cpp" "CMakeFiles/marker_array_demo.dir/src/marker_array_demo.cpp.o" "gcc" "CMakeFiles/marker_array_demo.dir/src/marker_array_demo.cpp.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

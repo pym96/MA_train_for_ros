@@ -1,1 +1,2 @@
-/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/marker_array/ament_cmake_environment_hooks/local_setup.dsv
+source;share/marker_array/environment/ament_prefix_path.sh
+source;share/marker_array/environment/path.sh

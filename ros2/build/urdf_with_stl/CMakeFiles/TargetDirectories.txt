@@ -1,0 +1,9 @@
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/urdf_with_stl/CMakeFiles/uninstall.dir
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/urdf_with_stl/CMakeFiles/urdf_with_stl_uninstall.dir
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/urdf_with_stl/CMakeFiles/test.dir
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/urdf_with_stl/CMakeFiles/edit_cache.dir
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/urdf_with_stl/CMakeFiles/rebuild_cache.dir
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/urdf_with_stl/CMakeFiles/list_install_components.dir
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/urdf_with_stl/CMakeFiles/install.dir
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/urdf_with_stl/CMakeFiles/install/local.dir
+/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/urdf_with_stl/CMakeFiles/install/strip.dir

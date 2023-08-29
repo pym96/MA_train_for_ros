@@ -1,1 +1,1 @@
-/home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/vis_demo/ament_cmake_environment_hooks/ament_prefix_path.dsv
+prepend-non-duplicate;AMENT_PREFIX_PATH;

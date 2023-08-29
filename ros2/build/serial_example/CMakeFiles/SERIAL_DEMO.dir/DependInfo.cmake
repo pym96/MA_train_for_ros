@@ -11,8 +11,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/dan/train/train/MA_training/MA_train_for_ros/ros2/src/serial_example/src/serial_example.cpp" "CMakeFiles/SERIAL_DEMO.dir/src/serial_example.cpp.o" "gcc" "CMakeFiles/SERIAL_DEMO.dir/src/serial_example.cpp.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

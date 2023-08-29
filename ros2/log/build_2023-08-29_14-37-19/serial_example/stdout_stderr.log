@@ -1,0 +1,19 @@
+[100%] Built target SERIAL_DEMO
+-- Install configuration: ""
+-- Up-to-date: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/lib/serial_example/SERIAL_DEMO
+-- Up-to-date: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/ament_index/resource_index/package_run_dependencies/serial_example
+-- Up-to-date: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/ament_index/resource_index/parent_prefix_path/serial_example
+-- Up-to-date: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/environment/ament_prefix_path.sh
+-- Up-to-date: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/environment/path.sh
+-- Up-to-date: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/environment/path.dsv
+-- Up-to-date: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/local_setup.bash
+-- Up-to-date: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/local_setup.sh
+-- Up-to-date: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/local_setup.zsh
+-- Up-to-date: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/local_setup.dsv
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/package.dsv
+-- Up-to-date: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/ament_index/resource_index/packages/serial_example
+-- Up-to-date: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/cmake/serial_exampleConfig.cmake
+-- Up-to-date: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/cmake/serial_exampleConfig-version.cmake
+-- Up-to-date: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/serial_example/share/serial_example/package.xml

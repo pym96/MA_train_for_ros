@@ -1,0 +1,51 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+-- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/build/urdf_with_stl
+-- Install configuration: ""
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/config
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/description
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/description/robot_essentials.xacro
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/description/robot_base.urdf.xacro
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/launch
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/launch/rsp.launch.py
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/meshes
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/meshes/arm_base.stl
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/meshes/wrist.stl
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/meshes/robot_base.stl
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/meshes/wheel.stl
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/meshes/elbow.stl
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/meshes/bicep.stl
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/ament_index/resource_index/package_run_dependencies/urdf_with_stl
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/ament_index/resource_index/parent_prefix_path/urdf_with_stl
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/environment/ament_prefix_path.sh
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/environment/ament_prefix_path.dsv
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/environment/path.sh
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/environment/path.dsv
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/local_setup.bash
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/local_setup.sh
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/local_setup.zsh
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/local_setup.dsv
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/package.dsv
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/ament_index/resource_index/packages/urdf_with_stl
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/cmake/urdf_with_stlConfig.cmake
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/cmake/urdf_with_stlConfig-version.cmake
+-- Installing: /home/dan/train/train/MA_training/MA_train_for_ros/ros2/install/urdf_with_stl/share/urdf_with_stl/package.xml
