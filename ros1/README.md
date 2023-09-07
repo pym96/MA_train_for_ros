@@ -1,0 +1,2 @@
+# 在Gazebo中创建自己的仿真环境
+roslaunch mbot_gazebo mbot_laser_nav_gazebo.launch
