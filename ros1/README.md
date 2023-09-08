@@ -7,4 +7,4 @@ roslaunch mbot_gazebo mbot_laser_nav_gazebo.launch
 
 ![Screenshot from 2023-09-08 20-31-35](https://github.com/pym96/ma_train_for_ros/assets/105438207/dad9b1a9-6eda-479a-9663-92f5b2bde94c)
 
-![Screenshot from 2023-09-08 20-48-07](https://github.com/pym96/ma_train_for_ros/assets/105438207/66b316f8-8423-478a-903c-ad97d4b8a19c)
+![Screenshot from 2023-09-08 20-48-07](https://github.com/pym96/ma_train_for_ros/assets/105438207/5840e41d-46f1-4c69-86ae-e99a2c600d50)
