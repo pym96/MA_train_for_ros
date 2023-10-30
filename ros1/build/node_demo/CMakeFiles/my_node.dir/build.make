@@ -43,32 +43,32 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ma/learn/ros1_practise/ros1_control_arm/src
+CMAKE_SOURCE_DIR = /home/dan/learn/ma_train_for_ros/ros1/src/node_demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ma/learn/ros1_practise/ros1_control_arm/build
+CMAKE_BINARY_DIR = /home/dan/learn/ma_train_for_ros/ros1/build/node_demo
 
 # Include any dependencies generated for this target.
-include node_demo/CMakeFiles/my_node.dir/depend.make
+include CMakeFiles/my_node.dir/depend.make
 
 # Include the progress variables for this target.
-include node_demo/CMakeFiles/my_node.dir/progress.make
+include CMakeFiles/my_node.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include node_demo/CMakeFiles/my_node.dir/flags.make
+include CMakeFiles/my_node.dir/flags.make
 
-node_demo/CMakeFiles/my_node.dir/src/node_demo.cpp.o: node_demo/CMakeFiles/my_node.dir/flags.make
-node_demo/CMakeFiles/my_node.dir/src/node_demo.cpp.o: /home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/src/node_demo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ma/learn/ros1_practise/ros1_control_arm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object node_demo/CMakeFiles/my_node.dir/src/node_demo.cpp.o"
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build/node_demo && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_node.dir/src/node_demo.cpp.o -c /home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/src/node_demo.cpp
+CMakeFiles/my_node.dir/src/node_demo.cpp.o: CMakeFiles/my_node.dir/flags.make
+CMakeFiles/my_node.dir/src/node_demo.cpp.o: /home/dan/learn/ma_train_for_ros/ros1/src/node_demo/src/node_demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dan/learn/ma_train_for_ros/ros1/build/node_demo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/my_node.dir/src/node_demo.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_node.dir/src/node_demo.cpp.o -c /home/dan/learn/ma_train_for_ros/ros1/src/node_demo/src/node_demo.cpp
 
-node_demo/CMakeFiles/my_node.dir/src/node_demo.cpp.i: cmake_force
+CMakeFiles/my_node.dir/src/node_demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_node.dir/src/node_demo.cpp.i"
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build/node_demo && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/src/node_demo.cpp > CMakeFiles/my_node.dir/src/node_demo.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dan/learn/ma_train_for_ros/ros1/src/node_demo/src/node_demo.cpp > CMakeFiles/my_node.dir/src/node_demo.cpp.i
 
-node_demo/CMakeFiles/my_node.dir/src/node_demo.cpp.s: cmake_force
+CMakeFiles/my_node.dir/src/node_demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_node.dir/src/node_demo.cpp.s"
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build/node_demo && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/src/node_demo.cpp -o CMakeFiles/my_node.dir/src/node_demo.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dan/learn/ma_train_for_ros/ros1/src/node_demo/src/node_demo.cpp -o CMakeFiles/my_node.dir/src/node_demo.cpp.s
 
 # Object files for target my_node
 my_node_OBJECTS = \
@@ -77,39 +77,39 @@ my_node_OBJECTS = \
 # External object files for target my_node
 my_node_EXTERNAL_OBJECTS =
 
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node: node_demo/CMakeFiles/my_node.dir/src/node_demo.cpp.o
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node: node_demo/CMakeFiles/my_node.dir/build.make
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node: /opt/ros/noetic/lib/libroscpp.so
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node: /opt/ros/noetic/lib/librosconsole.so
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node: /opt/ros/noetic/lib/librostime.so
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node: /opt/ros/noetic/lib/libcpp_common.so
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node: node_demo/CMakeFiles/my_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ma/learn/ros1_practise/ros1_control_arm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node"
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build/node_demo && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_node.dir/link.txt --verbose=$(VERBOSE)
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node: CMakeFiles/my_node.dir/src/node_demo.cpp.o
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node: CMakeFiles/my_node.dir/build.make
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node: /opt/ros/noetic/lib/libroscpp.so
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node: /opt/ros/noetic/lib/librosconsole.so
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node: /opt/ros/noetic/lib/librostime.so
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node: /opt/ros/noetic/lib/libcpp_common.so
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node: CMakeFiles/my_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dan/learn/ma_train_for_ros/ros1/build/node_demo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-node_demo/CMakeFiles/my_node.dir/build: /home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node
+CMakeFiles/my_node.dir/build: /home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node
 
-.PHONY : node_demo/CMakeFiles/my_node.dir/build
+.PHONY : CMakeFiles/my_node.dir/build
 
-node_demo/CMakeFiles/my_node.dir/clean:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build/node_demo && $(CMAKE_COMMAND) -P CMakeFiles/my_node.dir/cmake_clean.cmake
-.PHONY : node_demo/CMakeFiles/my_node.dir/clean
+CMakeFiles/my_node.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles/my_node.dir/cmake_clean.cmake
+.PHONY : CMakeFiles/my_node.dir/clean
 
-node_demo/CMakeFiles/my_node.dir/depend:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ma/learn/ros1_practise/ros1_control_arm/src /home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo /home/ma/learn/ros1_practise/ros1_control_arm/build /home/ma/learn/ros1_practise/ros1_control_arm/build/node_demo /home/ma/learn/ros1_practise/ros1_control_arm/build/node_demo/CMakeFiles/my_node.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : node_demo/CMakeFiles/my_node.dir/depend
+CMakeFiles/my_node.dir/depend:
+	cd /home/dan/learn/ma_train_for_ros/ros1/build/node_demo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dan/learn/ma_train_for_ros/ros1/src/node_demo /home/dan/learn/ma_train_for_ros/ros1/src/node_demo /home/dan/learn/ma_train_for_ros/ros1/build/node_demo /home/dan/learn/ma_train_for_ros/ros1/build/node_demo /home/dan/learn/ma_train_for_ros/ros1/build/node_demo/CMakeFiles/my_node.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/my_node.dir/depend
 

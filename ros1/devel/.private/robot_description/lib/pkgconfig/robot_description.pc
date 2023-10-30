@@ -1,0 +1,8 @@
+prefix=/home/dan/learn/ma_train_for_ros/ros1/devel/.private/robot_description
+
+Name: robot_description
+Description: Description of robot_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

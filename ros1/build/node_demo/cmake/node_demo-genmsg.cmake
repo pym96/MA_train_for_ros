@@ -2,7 +2,7 @@
 
 message(STATUS "node_demo: 1 messages, 0 services")
 
-set(MSG_I_FLAGS "-Inode_demo:/home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Inode_demo:/home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/msg")
+set(MSG_I_FLAGS "-Inode_demo:/home/dan/learn/ma_train_for_ros/ros1/src/node_demo/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Inode_demo:/home/dan/learn/ma_train_for_ros/ros1/src/node_demo/msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,9 +17,9 @@ add_custom_target(node_demo_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/msg/UserType.msg" NAME_WE)
+get_filename_component(_filename "/home/dan/learn/ma_train_for_ros/ros1/src/node_demo/msg/UserType.msg" NAME_WE)
 add_custom_target(_node_demo_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "node_demo" "/home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/msg/UserType.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "node_demo" "/home/dan/learn/ma_train_for_ros/ros1/src/node_demo/msg/UserType.msg" "std_msgs/Header"
 )
 
 #
@@ -29,7 +29,7 @@ add_custom_target(_node_demo_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(node_demo
-  "/home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/msg/UserType.msg"
+  "/home/dan/learn/ma_train_for_ros/ros1/src/node_demo/msg/UserType.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/node_demo
@@ -49,7 +49,7 @@ add_custom_target(node_demo_generate_messages_cpp
 add_dependencies(node_demo_generate_messages node_demo_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/msg/UserType.msg" NAME_WE)
+get_filename_component(_filename "/home/dan/learn/ma_train_for_ros/ros1/src/node_demo/msg/UserType.msg" NAME_WE)
 add_dependencies(node_demo_generate_messages_cpp _node_demo_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -62,7 +62,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS node_demo_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(node_demo
-  "/home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/msg/UserType.msg"
+  "/home/dan/learn/ma_train_for_ros/ros1/src/node_demo/msg/UserType.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/node_demo
@@ -82,7 +82,7 @@ add_custom_target(node_demo_generate_messages_eus
 add_dependencies(node_demo_generate_messages node_demo_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/msg/UserType.msg" NAME_WE)
+get_filename_component(_filename "/home/dan/learn/ma_train_for_ros/ros1/src/node_demo/msg/UserType.msg" NAME_WE)
 add_dependencies(node_demo_generate_messages_eus _node_demo_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -95,7 +95,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS node_demo_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(node_demo
-  "/home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/msg/UserType.msg"
+  "/home/dan/learn/ma_train_for_ros/ros1/src/node_demo/msg/UserType.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/node_demo
@@ -115,7 +115,7 @@ add_custom_target(node_demo_generate_messages_lisp
 add_dependencies(node_demo_generate_messages node_demo_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/msg/UserType.msg" NAME_WE)
+get_filename_component(_filename "/home/dan/learn/ma_train_for_ros/ros1/src/node_demo/msg/UserType.msg" NAME_WE)
 add_dependencies(node_demo_generate_messages_lisp _node_demo_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -128,7 +128,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS node_demo_generate_messages_lisp)
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(node_demo
-  "/home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/msg/UserType.msg"
+  "/home/dan/learn/ma_train_for_ros/ros1/src/node_demo/msg/UserType.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/node_demo
@@ -148,7 +148,7 @@ add_custom_target(node_demo_generate_messages_nodejs
 add_dependencies(node_demo_generate_messages node_demo_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/msg/UserType.msg" NAME_WE)
+get_filename_component(_filename "/home/dan/learn/ma_train_for_ros/ros1/src/node_demo/msg/UserType.msg" NAME_WE)
 add_dependencies(node_demo_generate_messages_nodejs _node_demo_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -161,7 +161,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS node_demo_generate_messages_nodejs)
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(node_demo
-  "/home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/msg/UserType.msg"
+  "/home/dan/learn/ma_train_for_ros/ros1/src/node_demo/msg/UserType.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/node_demo
@@ -181,7 +181,7 @@ add_custom_target(node_demo_generate_messages_py
 add_dependencies(node_demo_generate_messages node_demo_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/msg/UserType.msg" NAME_WE)
+get_filename_component(_filename "/home/dan/learn/ma_train_for_ros/ros1/src/node_demo/msg/UserType.msg" NAME_WE)
 add_dependencies(node_demo_generate_messages_py _node_demo_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

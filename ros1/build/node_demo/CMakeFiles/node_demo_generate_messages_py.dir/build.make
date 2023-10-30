@@ -43,48 +43,48 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ma/learn/ros1_practise/ros1_control_arm/src
+CMAKE_SOURCE_DIR = /home/dan/learn/ma_train_for_ros/ros1/src/node_demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ma/learn/ros1_practise/ros1_control_arm/build
+CMAKE_BINARY_DIR = /home/dan/learn/ma_train_for_ros/ros1/build/node_demo
 
 # Utility rule file for node_demo_generate_messages_py.
 
 # Include the progress variables for this target.
-include node_demo/CMakeFiles/node_demo_generate_messages_py.dir/progress.make
+include CMakeFiles/node_demo_generate_messages_py.dir/progress.make
 
-node_demo/CMakeFiles/node_demo_generate_messages_py: /home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/python3/dist-packages/node_demo/msg/_UserType.py
-node_demo/CMakeFiles/node_demo_generate_messages_py: /home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/python3/dist-packages/node_demo/msg/__init__.py
+CMakeFiles/node_demo_generate_messages_py: /home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/python3/dist-packages/node_demo/msg/_UserType.py
+CMakeFiles/node_demo_generate_messages_py: /home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/python3/dist-packages/node_demo/msg/__init__.py
 
 
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/python3/dist-packages/node_demo/msg/_UserType.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/python3/dist-packages/node_demo/msg/_UserType.py: /home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/msg/UserType.msg
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/python3/dist-packages/node_demo/msg/_UserType.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ma/learn/ros1_practise/ros1_control_arm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG node_demo/UserType"
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build/node_demo && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/msg/UserType.msg -Inode_demo:/home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Inode_demo:/home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/msg -p node_demo -o /home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/python3/dist-packages/node_demo/msg
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/python3/dist-packages/node_demo/msg/_UserType.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/python3/dist-packages/node_demo/msg/_UserType.py: /home/dan/learn/ma_train_for_ros/ros1/src/node_demo/msg/UserType.msg
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/python3/dist-packages/node_demo/msg/_UserType.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dan/learn/ma_train_for_ros/ros1/build/node_demo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG node_demo/UserType"
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/dan/learn/ma_train_for_ros/ros1/src/node_demo/msg/UserType.msg -Inode_demo:/home/dan/learn/ma_train_for_ros/ros1/src/node_demo/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Inode_demo:/home/dan/learn/ma_train_for_ros/ros1/src/node_demo/msg -p node_demo -o /home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/python3/dist-packages/node_demo/msg
 
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/python3/dist-packages/node_demo/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/python3/dist-packages/node_demo/msg/__init__.py: /home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/python3/dist-packages/node_demo/msg/_UserType.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ma/learn/ros1_practise/ros1_control_arm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for node_demo"
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build/node_demo && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/python3/dist-packages/node_demo/msg --initpy
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/python3/dist-packages/node_demo/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/python3/dist-packages/node_demo/msg/__init__.py: /home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/python3/dist-packages/node_demo/msg/_UserType.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dan/learn/ma_train_for_ros/ros1/build/node_demo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for node_demo"
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/python3/dist-packages/node_demo/msg --initpy
 
-node_demo_generate_messages_py: node_demo/CMakeFiles/node_demo_generate_messages_py
-node_demo_generate_messages_py: /home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/python3/dist-packages/node_demo/msg/_UserType.py
-node_demo_generate_messages_py: /home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/python3/dist-packages/node_demo/msg/__init__.py
-node_demo_generate_messages_py: node_demo/CMakeFiles/node_demo_generate_messages_py.dir/build.make
+node_demo_generate_messages_py: CMakeFiles/node_demo_generate_messages_py
+node_demo_generate_messages_py: /home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/python3/dist-packages/node_demo/msg/_UserType.py
+node_demo_generate_messages_py: /home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/python3/dist-packages/node_demo/msg/__init__.py
+node_demo_generate_messages_py: CMakeFiles/node_demo_generate_messages_py.dir/build.make
 
 .PHONY : node_demo_generate_messages_py
 
 # Rule to build all files generated by this target.
-node_demo/CMakeFiles/node_demo_generate_messages_py.dir/build: node_demo_generate_messages_py
+CMakeFiles/node_demo_generate_messages_py.dir/build: node_demo_generate_messages_py
 
-.PHONY : node_demo/CMakeFiles/node_demo_generate_messages_py.dir/build
+.PHONY : CMakeFiles/node_demo_generate_messages_py.dir/build
 
-node_demo/CMakeFiles/node_demo_generate_messages_py.dir/clean:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build/node_demo && $(CMAKE_COMMAND) -P CMakeFiles/node_demo_generate_messages_py.dir/cmake_clean.cmake
-.PHONY : node_demo/CMakeFiles/node_demo_generate_messages_py.dir/clean
+CMakeFiles/node_demo_generate_messages_py.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles/node_demo_generate_messages_py.dir/cmake_clean.cmake
+.PHONY : CMakeFiles/node_demo_generate_messages_py.dir/clean
 
-node_demo/CMakeFiles/node_demo_generate_messages_py.dir/depend:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ma/learn/ros1_practise/ros1_control_arm/src /home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo /home/ma/learn/ros1_practise/ros1_control_arm/build /home/ma/learn/ros1_practise/ros1_control_arm/build/node_demo /home/ma/learn/ros1_practise/ros1_control_arm/build/node_demo/CMakeFiles/node_demo_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : node_demo/CMakeFiles/node_demo_generate_messages_py.dir/depend
+CMakeFiles/node_demo_generate_messages_py.dir/depend:
+	cd /home/dan/learn/ma_train_for_ros/ros1/build/node_demo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dan/learn/ma_train_for_ros/ros1/src/node_demo /home/dan/learn/ma_train_for_ros/ros1/src/node_demo /home/dan/learn/ma_train_for_ros/ros1/build/node_demo /home/dan/learn/ma_train_for_ros/ros1/build/node_demo /home/dan/learn/ma_train_for_ros/ros1/build/node_demo/CMakeFiles/node_demo_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/node_demo_generate_messages_py.dir/depend
 

@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"node_demo\"
 
-CXX_INCLUDES = -I/home/ma/learn/ros1_practise/ros1_control_arm/devel/include -I/home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/include -I/home/dan/learn/ma_train_for_ros/ros1/src/node_demo/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

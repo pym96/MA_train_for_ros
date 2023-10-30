@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ma/learn/ros1_practise/ros1_control_arm/devel/share/roseus/ros/node_demo/manifest.l"
-  "/home/ma/learn/ros1_practise/ros1_control_arm/devel/share/roseus/ros/node_demo/msg/UserType.l"
+  "/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/share/roseus/ros/node_demo/manifest.l"
+  "/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/share/roseus/ros/node_demo/msg/UserType.l"
   "CMakeFiles/node_demo_generate_messages_eus"
 )
 

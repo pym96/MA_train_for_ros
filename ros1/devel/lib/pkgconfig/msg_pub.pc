@@ -1,8 +1,0 @@
-prefix=/home/ma/learn/ros1_practise/ros1_control_arm/devel
-
-Name: msg_pub
-Description: Description of msg_pub
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

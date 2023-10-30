@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ma/learn/ros1_practise/ros1_control_arm/src/msg_pub_demo/src/msg_pub_demo.cpp" "/home/ma/learn/ros1_practise/ros1_control_arm/build/msg_pub_demo/CMakeFiles/demo_message_publisher.dir/src/msg_pub_demo.cpp.o"
+  "/home/dan/learn/ma_train_for_ros/ros1/src/msg_pub_demo/src/msg_pub_demo.cpp" "/home/dan/learn/ma_train_for_ros/ros1/build/msg_pub_demo/CMakeFiles/demo_message_publisher.dir/src/msg_pub_demo.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,8 +17,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/ma/learn/ros1_practise/ros1_control_arm/src/msg_pub_demo/include"
-  "/home/ma/learn/ros1_practise/ros1_control_arm/devel/include"
+  "/home/dan/learn/ma_train_for_ros/ros1/src/msg_pub_demo/include"
+  "/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )

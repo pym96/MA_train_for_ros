@@ -1,10 +1,1 @@
-
-"use strict";
-
-let UserType = require('./UserType.js');
-let UserType = require('./UserType.js');
-
-module.exports = {
-  UserType: UserType,
-  UserType: UserType,
-};
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/share/gennodejs/ros/node_demo/msg/_index.js

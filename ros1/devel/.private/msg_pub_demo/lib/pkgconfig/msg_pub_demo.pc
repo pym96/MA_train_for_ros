@@ -1,0 +1,8 @@
+prefix=/home/dan/learn/ma_train_for_ros/ros1/devel/.private/msg_pub_demo
+
+Name: msg_pub_demo
+Description: Description of msg_pub_demo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs message_runtime

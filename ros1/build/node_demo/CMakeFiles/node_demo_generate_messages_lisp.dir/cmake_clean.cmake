@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/ma/learn/ros1_practise/ros1_control_arm/devel/share/common-lisp/ros/node_demo/msg/UserType.lisp"
+  "/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/share/common-lisp/ros/node_demo/msg/UserType.lisp"
   "CMakeFiles/node_demo_generate_messages_lisp"
 )
 

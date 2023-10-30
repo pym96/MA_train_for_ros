@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node"
-  "/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/node_demo/my_node.pdb"
+  "/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node"
+  "/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/node_demo/my_node.pdb"
   "CMakeFiles/my_node.dir/src/node_demo.cpp.o"
 )
 

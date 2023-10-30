@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/ma/learn/ros1_practise/ros1_control_arm/devel/include/node_demo/UserType.h"
+  "/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/include/node_demo/UserType.h"
   "CMakeFiles/node_demo_generate_messages_cpp"
 )
 

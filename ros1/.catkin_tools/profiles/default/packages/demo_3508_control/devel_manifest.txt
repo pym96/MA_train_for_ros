@@ -1,0 +1,5 @@
+demo_3508_control
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/demo_3508_control/cmake.lock /home/dan/learn/ma_train_for_ros/ros1/devel/./cmake.lock
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/demo_3508_control/lib/pkgconfig/demo_3508_control.pc /home/dan/learn/ma_train_for_ros/ros1/devel/lib/pkgconfig/demo_3508_control.pc
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/demo_3508_control/share/demo_3508_control/cmake/demo_3508_controlConfig-version.cmake /home/dan/learn/ma_train_for_ros/ros1/devel/share/demo_3508_control/cmake/demo_3508_controlConfig-version.cmake
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/demo_3508_control/share/demo_3508_control/cmake/demo_3508_controlConfig.cmake /home/dan/learn/ma_train_for_ros/ros1/devel/share/demo_3508_control/cmake/demo_3508_controlConfig.cmake

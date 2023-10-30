@@ -1,0 +1,6 @@
+devel_space: /home/dan/learn/ma_train_for_ros/ros1/devel
+install: false
+install_space: /home/dan/learn/ma_train_for_ros/ros1/install
+profile: default
+source_space: /home/dan/learn/ma_train_for_ros/ros1/src
+workspace: /home/dan/learn/ma_train_for_ros/ros1

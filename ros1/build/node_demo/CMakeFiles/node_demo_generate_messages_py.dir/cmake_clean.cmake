@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/python3/dist-packages/node_demo/msg/_UserType.py"
-  "/home/ma/learn/ros1_practise/ros1_control_arm/devel/lib/python3/dist-packages/node_demo/msg/__init__.py"
+  "/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/python3/dist-packages/node_demo/msg/_UserType.py"
+  "/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/lib/python3/dist-packages/node_demo/msg/__init__.py"
   "CMakeFiles/node_demo_generate_messages_py"
 )
 

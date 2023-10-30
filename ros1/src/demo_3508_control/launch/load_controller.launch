@@ -1,0 +1,11 @@
+<launch>
+    <rosparam file="$(find demo_3508_control)/config/demo_controller.yaml" command="load"/>
+    <!-- load the controllers -->
+    <node name="controller_loader" pkg="controller_manager" type="controller_manager"
+          respawn="false" output="screen"
+          args="load
+          controllers/joint_state_controller
+          controllers/joint_position_controller
+          controllers/joint_velocity_controller
+"/>
+</launch>

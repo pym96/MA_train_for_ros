@@ -1,0 +1,9 @@
+<launch>
+    <!-- push robot_description to factory and spawn robot in gazebo -->
+    <param name="robot_description"
+           command="$(find xacro)/xacro $(find demo_3508_control)/urdf/demo.urdf.xacro"/>
+    <rosparam file="$(find rm_hw)/config/actuator_coefficient.yaml" command="load" ns="rm_hw"/>
+    <rosparam file="$(find demo_3508_control)/config/rm_hw.yaml" command="load" ns="rm_hw"/>
+    <node name="rm_hw" pkg="rm_hw" type="rm_hw" respawn="false" clear_params="true"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+</launch>

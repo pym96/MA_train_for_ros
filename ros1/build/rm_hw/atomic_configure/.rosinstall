@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/dan/learn/ma_train_for_ros/ros1/devel/.private/rm_hw/setup.sh

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ma/learn/ros1_practise/ros1_control_arm/src
+CMAKE_SOURCE_DIR = /home/dan/learn/ma_train_for_ros/ros1/src/node_demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ma/learn/ros1_practise/ros1_control_arm/build
+CMAKE_BINARY_DIR = /home/dan/learn/ma_train_for_ros/ros1/build/node_demo
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -101,6 +101,17 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -124,27 +135,16 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # The main all target
 all: cmake_check_build_system
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ma/learn/ros1_practise/ros1_control_arm/build/CMakeFiles /home/ma/learn/ros1_practise/ros1_control_arm/build/node_demo/CMakeFiles/progress.marks
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ma/learn/ros1_practise/ros1_control_arm/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/learn/ma_train_for_ros/ros1/build/node_demo/CMakeFiles /home/dan/learn/ma_train_for_ros/ros1/build/node_demo/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/learn/ma_train_for_ros/ros1/build/node_demo/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/clean
+	$(MAKE) -f CMakeFiles/Makefile2 clean
 .PHONY : clean
 
 # The main clean target
@@ -154,438 +154,499 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/preinstall
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/preinstall
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-node_demo/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : node_demo/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+#=============================================================================
+# Target rules for targets named my_node
 
-# Convenience name for target.
-rosgraph_msgs_generate_messages_py: node_demo/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make node_demo/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : node_demo/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: node_demo/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make node_demo/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/node_demo_genpy.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/node_demo_genpy.dir/rule
-.PHONY : node_demo/CMakeFiles/node_demo_genpy.dir/rule
-
-# Convenience name for target.
-node_demo_genpy: node_demo/CMakeFiles/node_demo_genpy.dir/rule
-
-.PHONY : node_demo_genpy
-
-# fast build rule for target.
-node_demo_genpy/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/node_demo_genpy.dir/build.make node_demo/CMakeFiles/node_demo_genpy.dir/build
-.PHONY : node_demo_genpy/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : node_demo/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: node_demo/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make node_demo/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/_node_demo_generate_messages_check_deps_UserType.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/_node_demo_generate_messages_check_deps_UserType.dir/rule
-.PHONY : node_demo/CMakeFiles/_node_demo_generate_messages_check_deps_UserType.dir/rule
-
-# Convenience name for target.
-_node_demo_generate_messages_check_deps_UserType: node_demo/CMakeFiles/_node_demo_generate_messages_check_deps_UserType.dir/rule
-
-.PHONY : _node_demo_generate_messages_check_deps_UserType
-
-# fast build rule for target.
-_node_demo_generate_messages_check_deps_UserType/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/_node_demo_generate_messages_check_deps_UserType.dir/build.make node_demo/CMakeFiles/_node_demo_generate_messages_check_deps_UserType.dir/build
-.PHONY : _node_demo_generate_messages_check_deps_UserType/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/my_node.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/my_node.dir/rule
-.PHONY : node_demo/CMakeFiles/my_node.dir/rule
-
-# Convenience name for target.
-my_node: node_demo/CMakeFiles/my_node.dir/rule
-
+# Build rule for target.
+my_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_node
 .PHONY : my_node
 
 # fast build rule for target.
 my_node/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/my_node.dir/build.make node_demo/CMakeFiles/my_node.dir/build
+	$(MAKE) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/build
 .PHONY : my_node/fast
 
-# Convenience name for target.
-node_demo/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : node_demo/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+#=============================================================================
+# Target rules for targets named node_demo_generate_messages_py
 
-# Convenience name for target.
-std_msgs_generate_messages_cpp: node_demo/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make node_demo/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/node_demo_genlisp.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/node_demo_genlisp.dir/rule
-.PHONY : node_demo/CMakeFiles/node_demo_genlisp.dir/rule
-
-# Convenience name for target.
-node_demo_genlisp: node_demo/CMakeFiles/node_demo_genlisp.dir/rule
-
-.PHONY : node_demo_genlisp
-
-# fast build rule for target.
-node_demo_genlisp/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/node_demo_genlisp.dir/build.make node_demo/CMakeFiles/node_demo_genlisp.dir/build
-.PHONY : node_demo_genlisp/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-.PHONY : node_demo/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_nodejs: node_demo/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-.PHONY : roscpp_generate_messages_nodejs
-
-# fast build rule for target.
-roscpp_generate_messages_nodejs/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make node_demo/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-.PHONY : roscpp_generate_messages_nodejs/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : node_demo/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: node_demo/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make node_demo/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : node_demo/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: node_demo/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/roscpp_generate_messages_py.dir/build.make node_demo/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : node_demo/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: node_demo/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make node_demo/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/node_demo_geneus.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/node_demo_geneus.dir/rule
-.PHONY : node_demo/CMakeFiles/node_demo_geneus.dir/rule
-
-# Convenience name for target.
-node_demo_geneus: node_demo/CMakeFiles/node_demo_geneus.dir/rule
-
-.PHONY : node_demo_geneus
-
-# fast build rule for target.
-node_demo_geneus/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/node_demo_geneus.dir/build.make node_demo/CMakeFiles/node_demo_geneus.dir/build
-.PHONY : node_demo_geneus/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/node_demo_generate_messages_cpp.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/node_demo_generate_messages_cpp.dir/rule
-.PHONY : node_demo/CMakeFiles/node_demo_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-node_demo_generate_messages_cpp: node_demo/CMakeFiles/node_demo_generate_messages_cpp.dir/rule
-
-.PHONY : node_demo_generate_messages_cpp
-
-# fast build rule for target.
-node_demo_generate_messages_cpp/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/node_demo_generate_messages_cpp.dir/build.make node_demo/CMakeFiles/node_demo_generate_messages_cpp.dir/build
-.PHONY : node_demo_generate_messages_cpp/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/node_demo_generate_messages_py.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/node_demo_generate_messages_py.dir/rule
-.PHONY : node_demo/CMakeFiles/node_demo_generate_messages_py.dir/rule
-
-# Convenience name for target.
-node_demo_generate_messages_py: node_demo/CMakeFiles/node_demo_generate_messages_py.dir/rule
-
+# Build rule for target.
+node_demo_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 node_demo_generate_messages_py
 .PHONY : node_demo_generate_messages_py
 
 # fast build rule for target.
 node_demo_generate_messages_py/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/node_demo_generate_messages_py.dir/build.make node_demo/CMakeFiles/node_demo_generate_messages_py.dir/build
+	$(MAKE) -f CMakeFiles/node_demo_generate_messages_py.dir/build.make CMakeFiles/node_demo_generate_messages_py.dir/build
 .PHONY : node_demo_generate_messages_py/fast
 
-# Convenience name for target.
-node_demo/CMakeFiles/node_demo_gencpp.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/node_demo_gencpp.dir/rule
-.PHONY : node_demo/CMakeFiles/node_demo_gencpp.dir/rule
+#=============================================================================
+# Target rules for targets named node_demo_gennodejs
 
-# Convenience name for target.
-node_demo_gencpp: node_demo/CMakeFiles/node_demo_gencpp.dir/rule
-
-.PHONY : node_demo_gencpp
-
-# fast build rule for target.
-node_demo_gencpp/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/node_demo_gencpp.dir/build.make node_demo/CMakeFiles/node_demo_gencpp.dir/build
-.PHONY : node_demo_gencpp/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-.PHONY : node_demo/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: node_demo/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make node_demo/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : node_demo/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: node_demo/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make node_demo/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : node_demo/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_nodejs: node_demo/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make node_demo/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : node_demo/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: node_demo/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/std_msgs_generate_messages_py.dir/build.make node_demo/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-.PHONY : node_demo/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: node_demo/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make node_demo/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/node_demo_generate_messages.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/node_demo_generate_messages.dir/rule
-.PHONY : node_demo/CMakeFiles/node_demo_generate_messages.dir/rule
-
-# Convenience name for target.
-node_demo_generate_messages: node_demo/CMakeFiles/node_demo_generate_messages.dir/rule
-
-.PHONY : node_demo_generate_messages
-
-# fast build rule for target.
-node_demo_generate_messages/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/node_demo_generate_messages.dir/build.make node_demo/CMakeFiles/node_demo_generate_messages.dir/build
-.PHONY : node_demo_generate_messages/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/node_demo_generate_messages_eus.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/node_demo_generate_messages_eus.dir/rule
-.PHONY : node_demo/CMakeFiles/node_demo_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-node_demo_generate_messages_eus: node_demo/CMakeFiles/node_demo_generate_messages_eus.dir/rule
-
-.PHONY : node_demo_generate_messages_eus
-
-# fast build rule for target.
-node_demo_generate_messages_eus/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/node_demo_generate_messages_eus.dir/build.make node_demo/CMakeFiles/node_demo_generate_messages_eus.dir/build
-.PHONY : node_demo_generate_messages_eus/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-.PHONY : node_demo/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_eus: node_demo/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-.PHONY : roscpp_generate_messages_eus
-
-# fast build rule for target.
-roscpp_generate_messages_eus/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/roscpp_generate_messages_eus.dir/build.make node_demo/CMakeFiles/roscpp_generate_messages_eus.dir/build
-.PHONY : roscpp_generate_messages_eus/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/node_demo_generate_messages_lisp.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/node_demo_generate_messages_lisp.dir/rule
-.PHONY : node_demo/CMakeFiles/node_demo_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-node_demo_generate_messages_lisp: node_demo/CMakeFiles/node_demo_generate_messages_lisp.dir/rule
-
-.PHONY : node_demo_generate_messages_lisp
-
-# fast build rule for target.
-node_demo_generate_messages_lisp/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/node_demo_generate_messages_lisp.dir/build.make node_demo/CMakeFiles/node_demo_generate_messages_lisp.dir/build
-.PHONY : node_demo_generate_messages_lisp/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/node_demo_generate_messages_nodejs.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/node_demo_generate_messages_nodejs.dir/rule
-.PHONY : node_demo/CMakeFiles/node_demo_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-node_demo_generate_messages_nodejs: node_demo/CMakeFiles/node_demo_generate_messages_nodejs.dir/rule
-
-.PHONY : node_demo_generate_messages_nodejs
-
-# fast build rule for target.
-node_demo_generate_messages_nodejs/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/node_demo_generate_messages_nodejs.dir/build.make node_demo/CMakeFiles/node_demo_generate_messages_nodejs.dir/build
-.PHONY : node_demo_generate_messages_nodejs/fast
-
-# Convenience name for target.
-node_demo/CMakeFiles/node_demo_gennodejs.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/node_demo_gennodejs.dir/rule
-.PHONY : node_demo/CMakeFiles/node_demo_gennodejs.dir/rule
-
-# Convenience name for target.
-node_demo_gennodejs: node_demo/CMakeFiles/node_demo_gennodejs.dir/rule
-
+# Build rule for target.
+node_demo_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 node_demo_gennodejs
 .PHONY : node_demo_gennodejs
 
 # fast build rule for target.
 node_demo_gennodejs/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/node_demo_gennodejs.dir/build.make node_demo/CMakeFiles/node_demo_gennodejs.dir/build
+	$(MAKE) -f CMakeFiles/node_demo_gennodejs.dir/build.make CMakeFiles/node_demo_gennodejs.dir/build
 .PHONY : node_demo_gennodejs/fast
 
-# Convenience name for target.
-node_demo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f CMakeFiles/Makefile2 node_demo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : node_demo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+#=============================================================================
+# Target rules for targets named _node_demo_generate_messages_check_deps_UserType
 
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: node_demo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+# Build rule for target.
+_node_demo_generate_messages_check_deps_UserType: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _node_demo_generate_messages_check_deps_UserType
+.PHONY : _node_demo_generate_messages_check_deps_UserType
 
+# fast build rule for target.
+_node_demo_generate_messages_check_deps_UserType/fast:
+	$(MAKE) -f CMakeFiles/_node_demo_generate_messages_check_deps_UserType.dir/build.make CMakeFiles/_node_demo_generate_messages_check_deps_UserType.dir/build
+.PHONY : _node_demo_generate_messages_check_deps_UserType/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_cpp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
 .PHONY : rosgraph_msgs_generate_messages_cpp
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make node_demo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named node_demo_genlisp
+
+# Build rule for target.
+node_demo_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 node_demo_genlisp
+.PHONY : node_demo_genlisp
+
+# fast build rule for target.
+node_demo_genlisp/fast:
+	$(MAKE) -f CMakeFiles/node_demo_genlisp.dir/build.make CMakeFiles/node_demo_genlisp.dir/build
+.PHONY : node_demo_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_nodejs
+
+# Build rule for target.
+roscpp_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_nodejs
+.PHONY : roscpp_generate_messages_nodejs
+
+# fast build rule for target.
+roscpp_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+.PHONY : roscpp_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_eus
+
+# Build rule for target.
+std_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_cpp
+
+# Build rule for target.
+roscpp_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_cpp.dir/build.make CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_py
+
+# Build rule for target.
+roscpp_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_py.dir/build.make CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_py
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named doxygen
+
+# Build rule for target.
+doxygen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 doxygen
+.PHONY : doxygen
+
+# fast build rule for target.
+doxygen/fast:
+	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
+.PHONY : doxygen/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_lisp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named download_extra_data
+
+# Build rule for target.
+download_extra_data: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 download_extra_data
+.PHONY : download_extra_data
+
+# fast build rule for target.
+download_extra_data/fast:
+	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/build
+.PHONY : download_extra_data/fast
+
+#=============================================================================
+# Target rules for targets named node_demo_genpy
+
+# Build rule for target.
+node_demo_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 node_demo_genpy
+.PHONY : node_demo_genpy
+
+# fast build rule for target.
+node_demo_genpy/fast:
+	$(MAKE) -f CMakeFiles/node_demo_genpy.dir/build.make CMakeFiles/node_demo_genpy.dir/build
+.PHONY : node_demo_genpy/fast
+
+#=============================================================================
+# Target rules for targets named run_tests
+
+# Build rule for target.
+run_tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests
+.PHONY : run_tests
+
+# fast build rule for target.
+run_tests/fast:
+	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
+.PHONY : run_tests/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_lisp
+
+# Build rule for target.
+std_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named node_demo_geneus
+
+# Build rule for target.
+node_demo_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 node_demo_geneus
+.PHONY : node_demo_geneus
+
+# fast build rule for target.
+node_demo_geneus/fast:
+	$(MAKE) -f CMakeFiles/node_demo_geneus.dir/build.make CMakeFiles/node_demo_geneus.dir/build
+.PHONY : node_demo_geneus/fast
+
+#=============================================================================
+# Target rules for targets named node_demo_generate_messages_cpp
+
+# Build rule for target.
+node_demo_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 node_demo_generate_messages_cpp
+.PHONY : node_demo_generate_messages_cpp
+
+# fast build rule for target.
+node_demo_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/node_demo_generate_messages_cpp.dir/build.make CMakeFiles/node_demo_generate_messages_cpp.dir/build
+.PHONY : node_demo_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_lisp
+
+# Build rule for target.
+roscpp_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_lisp.dir/build.make CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named clean_test_results
+
+# Build rule for target.
+clean_test_results: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results
+.PHONY : clean_test_results
+
+# fast build rule for target.
+clean_test_results/fast:
+	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
+.PHONY : clean_test_results/fast
+
+#=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+#=============================================================================
+# Target rules for targets named node_demo_gencpp
+
+# Build rule for target.
+node_demo_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 node_demo_gencpp
+.PHONY : node_demo_gencpp
+
+# fast build rule for target.
+node_demo_gencpp/fast:
+	$(MAKE) -f CMakeFiles/node_demo_gencpp.dir/build.make CMakeFiles/node_demo_gencpp.dir/build
+.PHONY : node_demo_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_nodejs
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_nodejs
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_cpp
+
+# Build rule for target.
+std_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
+.PHONY : std_msgs_generate_messages_cpp
+
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_nodejs
+
+# Build rule for target.
+std_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_nodejs
+.PHONY : std_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+std_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+.PHONY : std_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_py
+
+# Build rule for target.
+std_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_eus
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named node_demo_generate_messages
+
+# Build rule for target.
+node_demo_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 node_demo_generate_messages
+.PHONY : node_demo_generate_messages
+
+# fast build rule for target.
+node_demo_generate_messages/fast:
+	$(MAKE) -f CMakeFiles/node_demo_generate_messages.dir/build.make CMakeFiles/node_demo_generate_messages.dir/build
+.PHONY : node_demo_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named node_demo_generate_messages_eus
+
+# Build rule for target.
+node_demo_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 node_demo_generate_messages_eus
+.PHONY : node_demo_generate_messages_eus
+
+# fast build rule for target.
+node_demo_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/node_demo_generate_messages_eus.dir/build.make CMakeFiles/node_demo_generate_messages_eus.dir/build
+.PHONY : node_demo_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_eus
+
+# Build rule for target.
+roscpp_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_eus
+.PHONY : roscpp_generate_messages_eus
+
+# fast build rule for target.
+roscpp_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_eus.dir/build.make CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named node_demo_generate_messages_lisp
+
+# Build rule for target.
+node_demo_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 node_demo_generate_messages_lisp
+.PHONY : node_demo_generate_messages_lisp
+
+# fast build rule for target.
+node_demo_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/node_demo_generate_messages_lisp.dir/build.make CMakeFiles/node_demo_generate_messages_lisp.dir/build
+.PHONY : node_demo_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named node_demo_generate_messages_nodejs
+
+# Build rule for target.
+node_demo_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 node_demo_generate_messages_nodejs
+.PHONY : node_demo_generate_messages_nodejs
+
+# fast build rule for target.
+node_demo_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/node_demo_generate_messages_nodejs.dir/build.make CMakeFiles/node_demo_generate_messages_nodejs.dir/build
+.PHONY : node_demo_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
 
 src/node_demo.o: src/node_demo.cpp.o
 
@@ -593,7 +654,7 @@ src/node_demo.o: src/node_demo.cpp.o
 
 # target to build an object file
 src/node_demo.cpp.o:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/my_node.dir/build.make node_demo/CMakeFiles/my_node.dir/src/node_demo.cpp.o
+	$(MAKE) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/src/node_demo.cpp.o
 .PHONY : src/node_demo.cpp.o
 
 src/node_demo.i: src/node_demo.cpp.i
@@ -602,7 +663,7 @@ src/node_demo.i: src/node_demo.cpp.i
 
 # target to preprocess a source file
 src/node_demo.cpp.i:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/my_node.dir/build.make node_demo/CMakeFiles/my_node.dir/src/node_demo.cpp.i
+	$(MAKE) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/src/node_demo.cpp.i
 .PHONY : src/node_demo.cpp.i
 
 src/node_demo.s: src/node_demo.cpp.s
@@ -611,7 +672,7 @@ src/node_demo.s: src/node_demo.cpp.s
 
 # target to generate assembly for a file
 src/node_demo.cpp.s:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(MAKE) -f node_demo/CMakeFiles/my_node.dir/build.make node_demo/CMakeFiles/my_node.dir/src/node_demo.cpp.s
+	$(MAKE) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/src/node_demo.cpp.s
 .PHONY : src/node_demo.cpp.s
 
 # Help Target
@@ -623,25 +684,33 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... edit_cache"
-	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... node_demo_genpy"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... my_node"
+	@echo "... node_demo_generate_messages_py"
+	@echo "... node_demo_gennodejs"
 	@echo "... install"
 	@echo "... _node_demo_generate_messages_check_deps_UserType"
-	@echo "... my_node"
-	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... test"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... node_demo_genlisp"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_eus"
+	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... doxygen"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... download_extra_data"
+	@echo "... node_demo_genpy"
+	@echo "... run_tests"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... node_demo_geneus"
 	@echo "... node_demo_generate_messages_cpp"
-	@echo "... node_demo_generate_messages_py"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... clean_test_results"
+	@echo "... tests"
 	@echo "... node_demo_gencpp"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... roscpp_generate_messages_cpp"
+	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... install/local"
@@ -652,9 +721,10 @@ help:
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... node_demo_generate_messages_lisp"
 	@echo "... node_demo_generate_messages_nodejs"
-	@echo "... node_demo_gennodejs"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... test"
+	@echo "... gmock_main"
+	@echo "... gmock"
+	@echo "... gtest_main"
+	@echo "... gtest"
 	@echo "... src/node_demo.o"
 	@echo "... src/node_demo.i"
 	@echo "... src/node_demo.s"
@@ -669,6 +739,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ma/learn/ros1_practise/ros1_control_arm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

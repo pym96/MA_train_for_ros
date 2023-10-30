@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "robot_description"
-PROJECT_SPACE_DIR = "/home/ma/learn/ros1_practise/ros1_control_arm/install"
+PROJECT_SPACE_DIR = "/home/dan/learn/ma_train_for_ros/ros1/install"
 PROJECT_VERSION = "0.0.0"

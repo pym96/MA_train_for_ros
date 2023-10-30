@@ -1,9 +1,1 @@
-(cl:defpackage node_demo-msg
-  (:use )
-  (:export
-   "<USERTYPE>"
-   "USERTYPE"
-   "<USERTYPE>"
-   "USERTYPE"
-  ))
-
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/share/common-lisp/ros/node_demo/msg/_package.lisp

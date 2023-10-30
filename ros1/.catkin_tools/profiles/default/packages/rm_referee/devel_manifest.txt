@@ -1,0 +1,6 @@
+rm_control/rm_referee
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/rm_referee/cmake.lock /home/dan/learn/ma_train_for_ros/ros1/devel/./cmake.lock
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/rm_referee/lib/rm_referee/rm_referee /home/dan/learn/ma_train_for_ros/ros1/devel/lib/rm_referee/rm_referee
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/rm_referee/lib/pkgconfig/rm_referee.pc /home/dan/learn/ma_train_for_ros/ros1/devel/lib/pkgconfig/rm_referee.pc
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/rm_referee/share/rm_referee/cmake/rm_refereeConfig-version.cmake /home/dan/learn/ma_train_for_ros/ros1/devel/share/rm_referee/cmake/rm_refereeConfig-version.cmake
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/rm_referee/share/rm_referee/cmake/rm_refereeConfig.cmake /home/dan/learn/ma_train_for_ros/ros1/devel/share/rm_referee/cmake/rm_refereeConfig.cmake

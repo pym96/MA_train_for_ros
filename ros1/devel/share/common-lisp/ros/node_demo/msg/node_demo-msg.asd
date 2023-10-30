@@ -1,12 +1,1 @@
-
-(cl:in-package :asdf)
-
-(defsystem "node_demo-msg"
-  :depends-on (:roslisp-msg-protocol :roslisp-utils :std_msgs-msg
-)
-  :components ((:file "_package")
-    (:file "UserType" :depends-on ("_package_UserType"))
-    (:file "_package_UserType" :depends-on ("_package"))
-    (:file "UserType" :depends-on ("_package_UserType"))
-    (:file "_package_UserType" :depends-on ("_package"))
-  ))
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/share/common-lisp/ros/node_demo/msg/node_demo-msg.asd

@@ -1,0 +1,1 @@
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/rm_hw/share/rm_hw/cmake/rm_hwConfig-version.cmake

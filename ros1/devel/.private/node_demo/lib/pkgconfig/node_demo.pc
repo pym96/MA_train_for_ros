@@ -1,0 +1,8 @@
+prefix=/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo
+
+Name: node_demo
+Description: Description of node_demo
+Version: 0.0.0
+Cflags: -I/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime roscpp std_msgs

@@ -1,0 +1,6 @@
+[31m[1mCMake Error[0m at /home/dan/learn/ma_train_for_ros/ros1/src/msg_pub_demo/CMakeLists.txt:55 (add_dependencies):
+  The dependency target "node_demo_gencpp" of target "demo_message_publisher"
+  does not exist.
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

@@ -1,0 +1,1 @@
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/rm_common/share/rm_common/cmake/rm_commonConfig-version.cmake

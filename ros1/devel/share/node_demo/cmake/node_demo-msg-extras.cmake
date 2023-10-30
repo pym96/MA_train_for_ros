@@ -1,2 +1,1 @@
-set(node_demo_MESSAGE_FILES "/home/ma/learn/ros1_practise/ros1_control_arm/src/node_demo/msg/UserType.msg")
-set(node_demo_SERVICE_FILES "")
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/node_demo/share/node_demo/cmake/node_demo-msg-extras.cmake

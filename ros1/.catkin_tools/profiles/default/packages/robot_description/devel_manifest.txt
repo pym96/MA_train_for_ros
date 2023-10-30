@@ -1,0 +1,5 @@
+robot_description
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/robot_description/cmake.lock /home/dan/learn/ma_train_for_ros/ros1/devel/./cmake.lock
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/robot_description/lib/pkgconfig/robot_description.pc /home/dan/learn/ma_train_for_ros/ros1/devel/lib/pkgconfig/robot_description.pc
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/robot_description/share/robot_description/cmake/robot_descriptionConfig-version.cmake /home/dan/learn/ma_train_for_ros/ros1/devel/share/robot_description/cmake/robot_descriptionConfig-version.cmake
+/home/dan/learn/ma_train_for_ros/ros1/devel/.private/robot_description/share/robot_description/cmake/robot_descriptionConfig.cmake /home/dan/learn/ma_train_for_ros/ros1/devel/share/robot_description/cmake/robot_descriptionConfig.cmake
