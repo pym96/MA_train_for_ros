@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target rosparam_load_demo_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/rosparam_load_demo_node.dir/src/load_param.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/dan/learn/ma_train_for_ros/ros1/devel/.private/rosparam_load_demo/lib/rosparam_load_demo/rosparam_load_demo_node[0m
+[100%] Built target rosparam_load_demo_node

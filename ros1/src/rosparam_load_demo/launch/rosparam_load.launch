@@ -1,0 +1,6 @@
+<launch>
+    <param name="publish_frequency" value="20.0" />
+    <!-- <rosparam command="load" file="${find rosparam_load_demo}/config/demo_config.yaml" /> -->
+    <rosparam command="load" file="$(find rosparam_load_demo)/config/demo_config.yaml" />
+    <node name="demo_node" pkg="rosparam_load_demo" type="rosparam_load_demo_node" />
+</launch>

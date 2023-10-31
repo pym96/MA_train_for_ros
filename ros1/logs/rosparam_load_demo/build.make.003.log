@@ -1,0 +1,52 @@
+[35m[1mScanning dependencies of target rosparam_load_demo_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/rosparam_load_demo_node.dir/src/load_param.cpp.o[0m
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/dan/learn/ma_train_for_ros/ros1/src/rosparam_load_demo/src/load_param.cpp:1[m[K:
+[01m[K/home/dan/learn/ma_train_for_ros/ros1/src/rosparam_load_demo/src/load_param.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/dan/learn/ma_train_for_ros/ros1/src/rosparam_load_demo/src/load_param.cpp:15:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 8 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K-Wformat=[m[K]
+   15 |     if(if_get1) ROS_INFO([01;35m[K"Get name %s"[m[K, name);
+      |                          [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/dan/learn/ma_train_for_ros/ros1/src/rosparam_load_demo/src/load_param.cpp:15:17:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   15 |     if(if_get1) [01;36m[KROS_INFO[m[K("Get name %s", name);
+      |                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/dan/learn/ma_train_for_ros/ros1/src/rosparam_load_demo/src/load_param.cpp:15:37:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   15 |     if(if_get1) ROS_INFO("Get name [01;36m[K%s[m[K", name);
+      |                                    [01;36m[K~^[m[K
+      |                                     [01;36m[K|[m[K
+      |                                     [01;36m[Kchar*[m[K
+[100%] [32m[1mLinking CXX executable /home/dan/learn/ma_train_for_ros/ros1/devel/.private/rosparam_load_demo/lib/rosparam_load_demo/rosparam_load_demo_node[0m
+/usr/bin/ld: CMakeFiles/rosparam_load_demo_node.dir/src/load_param.cpp.o: in function `main':
+load_param.cpp:(.text+0x95): undefined reference to `ros::init(int&, char**, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int)'
+/usr/bin/ld: load_param.cpp:(.text+0x127): undefined reference to `ros::NodeHandle::NodeHandle(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+/usr/bin/ld: load_param.cpp:(.text+0x199): undefined reference to `ros::param::get(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)'
+/usr/bin/ld: load_param.cpp:(.text+0x202): undefined reference to `ros::param::get(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int&)'
+/usr/bin/ld: load_param.cpp:(.text+0x23a): undefined reference to `ros::console::g_initialized'
+/usr/bin/ld: load_param.cpp:(.text+0x24a): undefined reference to `ros::console::initialize()'
+/usr/bin/ld: load_param.cpp:(.text+0x2a3): undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/usr/bin/ld: load_param.cpp:(.text+0x2e6): undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/usr/bin/ld: load_param.cpp:(.text+0x2f2): undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/usr/bin/ld: load_param.cpp:(.text+0x367): undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/usr/bin/ld: load_param.cpp:(.text+0x38e): undefined reference to `ros::console::g_initialized'
+/usr/bin/ld: load_param.cpp:(.text+0x39e): undefined reference to `ros::console::initialize()'
+/usr/bin/ld: load_param.cpp:(.text+0x3f7): undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+/usr/bin/ld: load_param.cpp:(.text+0x43a): undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+/usr/bin/ld: load_param.cpp:(.text+0x446): undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+/usr/bin/ld: load_param.cpp:(.text+0x4a1): undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+/usr/bin/ld: load_param.cpp:(.text+0x4c8): undefined reference to `ros::NodeHandle::~NodeHandle()'
+/usr/bin/ld: load_param.cpp:(.text+0x64b): undefined reference to `ros::NodeHandle::~NodeHandle()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/rosparam_load_demo_node.dir/build.make:84: /home/dan/learn/ma_train_for_ros/ros1/devel/.private/rosparam_load_demo/lib/rosparam_load_demo/rosparam_load_demo_node] Error 1
+make[1]: *** [CMakeFiles/Makefile2:182: CMakeFiles/rosparam_load_demo_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

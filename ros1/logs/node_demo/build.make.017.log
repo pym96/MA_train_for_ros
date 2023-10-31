@@ -1,0 +1,13 @@
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_cpp
+[ 22%] Built target my_node
+[ 22%] Built target _node_demo_generate_messages_check_deps_UserType
+[ 88%] Built target node_demo_generate_messages_lisp
+[ 88%] Built target node_demo_generate_messages_cpp
+[ 88%] Built target node_demo_generate_messages_nodejs
+[ 88%] Built target node_demo_generate_messages_py
+[100%] Built target node_demo_generate_messages_eus
+[100%] Built target node_demo_generate_messages

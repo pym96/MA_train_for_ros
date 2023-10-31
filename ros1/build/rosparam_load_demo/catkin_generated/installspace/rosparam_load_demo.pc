@@ -1,0 +1,8 @@
+prefix=/home/dan/learn/ma_train_for_ros/ros1/install
+
+Name: rosparam_load_demo
+Description: Description of rosparam_load_demo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
