@@ -28,11 +28,11 @@ src/demo_3508_control/launch/load_controller.launch
     
 4. After u've have above all, pub msg to motor by can.(Remeber install can-utils first, its command is: "sudo apt install can-utils")
 
-sudo ip link set can0 up type can bitrate 1000000
-candump can0
+    sudo ip link set can0 up type can bitrate 1000000
+    candump can0
 
-rostopic pub /controllers/joint_position_controller/command std_msgs/Float64 "data: 10.0"
+    rostopic pub /controllers/joint_position_controller/command std_msgs/Float64 "data: 10.0"
 
 OR 
 
-rostopic pub /controllers/joint_velocity_controller/command std_msgs/Float64 "data: 10.0"
+    rostopic pub /controllers/joint_velocity_controller/command std_msgs/Float64 "data: 10.0"
