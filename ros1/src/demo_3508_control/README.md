@@ -24,7 +24,7 @@ src/demo_3508_control/launch/load_controller.launch
 
 3. Then, u should open rqt and click "Robot Tools/ Controller Manager" and open joint state up.
     
-    #In this step, u can see topic alteration by commanding rostopic list to deepend your understanding
+    #In this step, u can see topic alteration by commanding rostopic list to deepen your understanding
     
 4. After u've have above all, pub msg to motor by can.(Remeber install can-utils first, its command is: "sudo apt install can-utils")
 
